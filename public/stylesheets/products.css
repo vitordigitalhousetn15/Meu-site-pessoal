@@ -1,0 +1,23 @@
+header {
+  border-bottom: 1px solid black;
+}
+
+header a:hover {
+  background-color: red;
+}
+
+header a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 24px 16px;
+  font-size: 24px;
+  border-left: 1px solid black;
+}
+
+header div {
+  display: inline-block;
+}
+
+header div:hover {
+  background-color: green;
+}
