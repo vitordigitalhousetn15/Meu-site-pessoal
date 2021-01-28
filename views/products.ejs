@@ -1,17 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>pagina de produtos</title>
-    <link rel="stylesheet" href="/stylesheets/products.css">
-  </head>
-  <body>
-    <header>
-      <div>
-        <img height="50px" width="100px" src="https://seeklogo.com/images/F/fake-biker-logo-A922297523-seeklogo.com.png">
-      </div>
-      <a href="/products">Produtos</a>
-      <a href="/about">Acessar Sobre</a>
-    </header>
-    <h1>Produtos</h1>
-  </body>
+
+<head>
+  <title>pagina de produtos</title>
+  <link rel="stylesheet" href="/stylesheets/products.css">
+</head>
+
+<body>
+  <header>
+    <a href="/products">Produtos</a>
+    <a href="/about">Acessar Sobre</a>
+  </header>
+  <h1>Produtos</h1>
+
+  <main class="content">
+    <div class="box">
+      <h2>
+        Lista de produtos
+
+      </h2>
+    </div>
+    <div class="box">
+      <h2>
+        Formulario
+      </h2>
+      <form>
+        <div>
+          <label for="name">
+            Nome do produto:
+            <input type="text" name="name" id="name">
+          </label>
+        </div>
+        <div>
+          <label for="price">
+            Preço:
+            <input type="number" name="price" id="price">
+          </label>
+        </div>
+        <div>
+          <label for="eletronic">
+            <input type="radio" name="type" id="eletronic">
+            Eletronico
+          </label>
+          <label for="food">
+            <input type="radio" name="type" id="food">
+            Alimenticio
+          </label>
+          <label for="drugs">
+            <input type="radio" name="type" id="drugs">
+            Farmaceutico
+          </label>
+        </div>
+        <button>
+          Enviar
+        </button>
+      </form>
+    </div>
+  </main>
+</body>
+
 </html>
+
+<!-- 
+****** Ajustando o layout da pagina ******
+  . Criar a seguinte tag: main.content dentro de body;
+  . Criar duas tags div.box dentro da tag main.content;
+  . a primeira tag div.box tem uma lista de produtos;
+  . a segunda tag div.box tem um formulario;
+ -->
+
+<!-- 
+****** Criando um formulario ******
+
+  -->
