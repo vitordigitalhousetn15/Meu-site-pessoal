@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+  <title>Home loja de produtos</title>
+  <link rel='stylesheet' href='/stylesheets/home.css' />
+</head>
+
+<body>
+  <header>
+    <a href="/products">Produtos</a>
+    <a href="/about">Acessar Sobre</a>
+  </header>
+  <h1>Minha loja de produtos</h1>
+  <main class="content">
+    <section class="about">
+      <h1>O melhor controle para seu estoque</h1>
+      <p>Estamos atuando no mercado a mais de 10 anos</p>
+    </section>
+
+    <section class="benefits">
+      <div class="row">
+        <div class="box">
+          <h3>Cadastro de produtos</h3>
+          <p>Nosso sistema permite que você cadastre novos produtos através de um formulário intuitivo</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box">
+          <h3>Listagem de produtos</h3>
+          <p>Consulte todos os produtos que estão disponivéis no seu estoque, através de uma lista</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
+
+
+<!-- 
+  . Apagar as variaveis ejs;
+  . Não utilizar o arquivo style.css;
+  . Criar arquivo home.css;
+  . Copiar o menu para dentro do css e do HTML;
+  . Criar a estrutura, section > row > box;
+  . 
+ -->

@@ -1,73 +1,28 @@
-/* header {
-  border-bottom: 1px solid black;
-}
-
-header a:hover {
-  background-color: red;
-}
-
-header a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 24px 16px;
-  font-size: 24px;
-  border-left: 1px solid black;
-}
-
-header div {
-  display: inline-block;
-}
-
-header div:hover {
-  background-color: green;
-} */
-
-/*
-
-****** Ajustando o menu ****** 
-. Remover o seletor header div;
-. Remover o seletor header div:hover;
-. Remover o seletor header a:hover;
-. Diminuir o font-size da Tag A;
-. Remover o border da header a;
-. Alterar o background do Header;
-. Alterar a cor da fonte;
-. Criar seletor header a:hover com border-bottom
-. Adicionar border-bottom na tag header a
-*/
-
 header {
   border-bottom: 1px solid black;
   background-color: #323639;
+}
+
+header a {
+  border-bottom: 2px solid transparent;
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+  padding: 24px 16px;
+  font-size: 16px;
+  border-left: solid 1px black;
+  font-family: sans-serif;
 }
 
 header a:hover {
   border-bottom: 2px solid #ff1500;
 }
 
-header a {
-  border-bottom: 2px solid #323639;
-  color: #fff;
-  display: inline-block;
-  font-family: sans-serif;
-  text-decoration: none;
-  padding: 24px 16px;
-  font-size: 16px;
-}
+/* header div {
+  display: inline-block; */
+/* } */
 
-/**
-****** Ajustando o layout da pagina ******
-. Criar a tag .box ajustando uma ao lado da outra;
-. Criar a tag .box:first-of-type
+/* header a:hover{
+  background-color: blue; */
 
-*/
-
-.box {
-  display: inline-block;
-  padding: 24px 16px;
-  width: 45%;
-}
-
-.box:first-of-type {
-  border-right: 1px solid black;
-}
+/* }fica azul na hora que passa o mouse */
