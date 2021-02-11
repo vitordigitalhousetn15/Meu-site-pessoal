@@ -14,25 +14,20 @@ header a {
   font-family: sans-serif;
 }
 
-header a:last-of-type {
-  margin-left: auto;
-}
-
 header a:hover {
   border-bottom: 2px solid #ff1500;
 }
 
 .box {
   border: 1px solid #323639;
-  height: 280px;
-  width: 288px;
+  height: 350px;
+  width: 500px;
   padding: 16px;
 }
 
 .custom-row {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 16px;
 }
 
 .custom-row:nth-child(even) {

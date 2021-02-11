@@ -14,10 +14,11 @@ header a {
   font-family: sans-serif;
 }
 
-header a:last-of-type {
-  margin-left: auto;
-}
-
 header a:hover {
   border-bottom: 2px solid #ff1500;
+}
+
+main form .btn-login {
+  width: 200px;
+  background-color: green;
 }
