@@ -18,7 +18,7 @@ router.get('/', function(req, res, next) {
     label: "Farmaceutico"
   }];
 
-  res.render('products', { name: "Pagina de produtos", types: types });
+  res.render('products', { name: "Cadastro de produtos", types: types });
 });
 
 module.exports = router;
