@@ -7,7 +7,18 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('products', { title: 'produtos', products: model.getProducts() });
+  const types = [{
+    id: "eletronic",
+    label: "Eletronico"
+  }, {
+    id: "food",
+    label: "Alimenticio"
+  }, {
+    id: "drugs",
+    label: "Farmaceutico"
+  }];
+
+  res.render('products', { name: "Pagina de produtos", types: types });
 });
 
 module.exports = router;

@@ -7,12 +7,9 @@
 </head>
 
 <body>
-  <header>
-    <a href="/">Home</a>
-    <a href="/products">Produtos</a>
-    <a href="/about">Acessar Sobre</a>
-  </header>
-  <h1>Produtos</h1>
+  <%- include('./partials/header') %>
+
+  <h1><%= name %></h1>
   <main>
     <h2>Cadastro de produtos</h2>
 
@@ -30,14 +27,11 @@
           <label>Tipo de produto:</label>
         </div>
 
-        <input type="radio" name="type" id="eletronic">
-        <label for="eletronic">Eletronico</label>
+        <% types.forEach(function(type) {%>
+        <input type="radio" name="type" id="<%= type.id %>">
+        <label for="<%= type.id %>"> <%= type.label %> </label>
+        <%}) %>
 
-        <input type="radio" name="type" id="food">
-        <label for="food">Alimenticio</label>
-
-        <input type="radio" name="type" id="drugs">
-        <label for="drugs">Farmaceutico</label>
       </div>
       <div>
         <input type="submit" value="Cadastrar produto">
