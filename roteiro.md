@@ -1,10 +1,10 @@
-. Apresentação do Carlos;
-. Revisão sobre a aula passada;
-. Scrum
-. EJS - Extraindo o Header
-. EJS - Componentização
-. EJS - HTML Dinamico x HTML Estatico
-. EJS - Criando uma página de detalhes
+. Lembrar da entrega do PI;
+. Esatrei a disposiçao para revisar a ideia com 3 grupos no FDS.
+. Revisão da aula anterior;
+  . EJS - Extraindo o Header
+  . EJS - HTML Dinamico x HTML Estatico
+. Metodos GET, POST, DELETE, PATCH
+. Metodos POST
 
 
 Link da aula
