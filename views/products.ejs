@@ -11,7 +11,7 @@
     <main class="container">
       <h1><%= name %></h1>
 
-      <form>
+      <form method="post" action="">
         <div class="mb-3">
           <label for="name" class="form-label">Nome do produto:</label>
           <input name="name" id="name" type="text" class="form-control" />
@@ -27,7 +27,7 @@
 
           <% types.forEach(function(type) {%>
             <div class="form-check-inline">
-              <input type="radio" name="type" id="<%= type.id %>" class="form-check-input" />
+              <input type="radio" name="type" id="<%= type.id %>" class="form-check-input" value="<%= type.id %>"/>
               <label for="<%= type.id %>" class="form-check-label"> <%= type.label %> </label>
             </div>
           <%}) %>
