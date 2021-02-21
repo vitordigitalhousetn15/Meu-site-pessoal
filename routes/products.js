@@ -1,24 +1,39 @@
 var express = require('express');
-const model = require('../model/products')
 
 var router = express.Router();
 
-// http://localhost:3000/products
+const products = [{
+  name: 'Geladeira',
+  price: 800,
+  type: 'eletronic'
+}, {
+  name: 'Arroz',
+  price: 30,
+  type: 'food'
+}]
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  const types = [{
-    id: "eletronic",
-    label: "Eletronico"
-  }, {
-    id: "food",
-    label: "Alimenticio"
-  }, {
-    id: "drugs",
-    label: "Farmaceutico"
-  }];
+const types = [{
+  id: "eletronic",
+  label: "Eletronico"
+}, {
+  id: "food",
+  label: "Alimenticio"
+}, {
+  id: "drugs",
+  label: "Farmaceutico"
+}];
 
+router.get('/', function(req, res) {
   res.render('products', { name: "Cadastro de produtos", types: types });
+});
+
+router.post('/', function(req, res) {
+  console.log(req.body);
+  res.render('products', { name: "Cadastro de produtos", types: types });
+});
+
+router.get('/lista', function(req, res) {
+  res.render('productsList', { products: products });
 });
 
 module.exports = router;
