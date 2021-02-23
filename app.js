@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 var productsRouter = require('./routes/products');
 var aboutRouter = require('./routes/about');
 var loginRouter = require('./routes/login');
+var methodOverride = require('method-override');
 
 var app = express();
 
@@ -22,13 +23,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(methodOverride('_method'));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
 app.use('/about', aboutRouter);
 
 app.use('/login', loginRouter);
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

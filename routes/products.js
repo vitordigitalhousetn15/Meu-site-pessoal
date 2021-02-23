@@ -2,11 +2,13 @@ var express = require('express');
 
 var router = express.Router();
 
-const products = [{
+let products = [{
+  id: 10,
   name: 'Geladeira',
   price: 800,
   type: 'eletronic'
 }, {
+  id: 20,
   name: 'Arroz',
   price: 30,
   type: 'food'
@@ -33,7 +35,15 @@ router.post('/', function(req, res) {
 });
 
 router.get('/lista', function(req, res) {
-  res.render('productsList', { products: products });
+  const hasDeleted = req.query.hasDeleted || false;
+  res.render('productsList', { products: products, hasDeleted: hasDeleted });
+});
+
+router.delete('/:id', function(req, res) {
+  products = products.filter(function(product) {
+    return product.id !== parseInt(req.params.id);
+  });
+  res.redirect('/products/lista?hasDeleted=true');
 });
 
 module.exports = router;
